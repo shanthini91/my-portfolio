@@ -86,6 +86,10 @@ hr {
 .navbar-toggler-icon{
 	background-color: white !important;
 }
+:root {
+  --bs-navbar-toggler-icon-bg: url('images\list.svg'); /* or .png */
+}
+
 .bg-image{
 	object-fit: contain;
 }
