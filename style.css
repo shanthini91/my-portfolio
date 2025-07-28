@@ -83,11 +83,10 @@ hr {
   color: white !important;
 	  font-weight: bold;
 }
-.navbar-toggler-icon{
-	background-color: white !important;
-}
+
 :root {
-  --bs-navbar-toggler-icon-bg: url('images\list.svg'); /* or .png */
+  --bs-navbar-toggler-icon-bg: url('images\list.svg') !important;
+	color: white !important;/* or .png */
 }
 
 .bg-image{
