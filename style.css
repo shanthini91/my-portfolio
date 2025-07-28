@@ -84,7 +84,7 @@ hr {
 	  font-weight: bold;
 }
 .navbar-toggler-icon{
-	background-color: white;
+	color: white !important;
 }
 .bg-image{
 	object-fit: contain;
