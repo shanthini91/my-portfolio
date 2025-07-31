@@ -98,47 +98,53 @@
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
-	
-	  // Show the button when user scrolls down
-window.onscroll = function () {
-  scrollFunction();
-};
+  AOS.init();
 
-function scrollFunction() {
-  const topBtn = document.getElementById("topBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
+  // Scroll to top button logic
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    const topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
   }
-}
 
-// Scroll to top when button is clicked
-function topFunction() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-// contact form
-  document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const form = this;
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        document.getElementById('formMessage').style.display = 'block';
-        form.reset();
-      } else {
-        alert('❌ There was an error sending your message. Please try again.');
-      }
+  // Contact form logic
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById('formMessage').style.display = 'block';
+          form.reset();
+        } else {
+          response.json().then(data => {
+            alert(data.error || '❌ There was an error sending your message. Please try again.');
+          });
+        }
+      }).catch(error => {
+        alert('❌ Network error. Please check your internet and try again.');
+      });
     });
   });
+</script>
 
-  </script>
 </body>
 </html>
