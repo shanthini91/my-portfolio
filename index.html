@@ -7,6 +7,7 @@
   <!-- Favicon -->
 <link rel="icon" href="images/favicon.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
   <style>
     .carousel-control-prev-icon,
@@ -56,9 +57,9 @@ Shanu's Portfolio</a>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="case-study.html">Case Study</a></li>
+		  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -176,7 +177,7 @@ Shanu's Portfolio</a>
           <img src="images/p2.png" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Book Store Website</h5>
-            <p class="card-text">A responsive book store layout built with HTML, CSS, and JS.</p>
+            <p class="card-text">A responsive book store layout built with HTML, CSS, and JS. Animations included.</p>
             <div class="d-flex justify-content-between">
               <a href="https://mybookstorepage.netlify.app/" class="btn btn-outline-primary" target="_blank">View Live</a>
               <a href="https://github.com/shanthini91/bookstore" class="btn btn-outline-secondary" target="_blank">View Code</a>
@@ -248,7 +249,7 @@ Shanu's Portfolio</a>
 <!-- ========================
      C. Resume Download Section
 =========================== -->
-<section id="resume" class="py-5 text-center">
+<section id="resume" class="py-5 bg-light text-center">
   <div class="container">
     <h2 class="mb-3">Download My Resume</h2>
     <p class="mb-4">Get the latest version of my resume with 3 years of experience and certifications.</p>
@@ -265,7 +266,9 @@ Shanu's Portfolio</a>
   AOS.init();
 </script>
 
-
+<button onclick="topFunction()" id="topBtn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
  
 
 
@@ -282,5 +285,26 @@ Shanu's Portfolio</a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Show the button when user scrolls down
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  const topBtn = document.getElementById("topBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+// Scroll to top when button is clicked
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
