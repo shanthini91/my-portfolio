@@ -244,12 +244,13 @@ footer {
     }
 
     .btn-contact {
-      background-color: #e91e63;
-      color: white;
+      background-color: tomato;
+      color: black;
     }
 
     .btn-contact:hover {
-      background-color: #c2185b;
+      background-color: red;
+	  color: white;
     }
 	#formMessage {
   display: none;
