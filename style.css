@@ -249,7 +249,7 @@ footer {
  .contact-container {
       max-width: 700px;
       margin: auto;
-      padding-top: 100px;
+     /* padding-top: 100px;*/
     }
 
     .form-control:focus {
@@ -272,6 +272,7 @@ footer {
   color: green;
   margin-top: 15px;
 }
+
 
 
 
