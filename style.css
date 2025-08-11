@@ -64,13 +64,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-hr {
-  border: none; /* Remove default border */
-  height: 2px; /* Set height for the line */
-  background-color: #333; /* Set color of the line */
-  width: 100%; /* Set width of the line */
-  margin: 20px auto; /* Center the line and add vertical spacing */
-}
+/*hr {
+  border: none;  
+  height: 2px; 
+  background-color: #333;
+  width: 100%; 
+  margin: 20px auto;
+}*/
 .container, .container-fluid{
 	  padding-left: 1rem;
   padding-right: 1rem;
@@ -272,6 +272,7 @@ footer {
   color: green;
   margin-top: 15px;
 }
+
 
 
 
