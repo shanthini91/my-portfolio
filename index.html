@@ -50,7 +50,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
 Shanu's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -65,11 +65,25 @@ Shanu's Portfolio</a>
     </div>
   </nav>
 
-  <!-- Hero Image -->
-  <div class="bg-image pt-2 mt-5 position-relative" style="background-color: #FDBD33;">
-    <img src="images/frame2.jpg" class="w-100 d-none d-md-block" alt="Desktop Image" style="height: 400px; object-fit: cover;" />
-    <img src="images/mobileframe.png" class="w-100 d-block d-md-none" alt="Mobile Image" style="height: 400px; object-fit: contain;" />
-  </div>
+<!-- Hero Image -->
+<div class="bg-image pt-2 mt-5 position-relative" style="background-color: tomato">
+  <!-- Desktop -->
+  <img src="images/frame2.jpg" 
+       class="w-100 hero-img desktop-img" 
+       alt="Desktop Banner">
+
+  <!-- Tablet -->
+  <img src="images/tabletframe.png" 
+       class="w-100 hero-img tablet-img" 
+       alt="Tablet Banner">
+
+  <!-- Mobile -->
+  <img src="images/mobileframe.png" 
+       class="w-100 hero-img mobile-img" 
+       alt="Mobile Banner">
+</div>
+
+
 
   <!-- Featured Projects Carousel -->
 <div class="container-fluid px-0 mt-5">
@@ -118,44 +132,13 @@ Shanu's Portfolio</a>
   <hr class=" proj-carousel-hr" />
 
 
-<!-- ========================
-     A. Certifications Section
-=========================== -->
-<section id="certifications" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Certifications</h2>
-    <div class="row text-center">
-      <div class="col-6 col-md-3 mb-4" data-aos="fade-up">
-        <img src="images/google.jpg" alt="Google UX" class="img-fluid mb-2 cert-img" width="300" data-aos="zoom-in"
-     data-aos-delay="100">
-        <p>Google UX Certification</p>
-      </div>
-      <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <img src="images/reactjs.jpg" alt="ReactJS" class="img-fluid mb-2 cert-img" width="300" data-aos="zoom-in"
-     data-aos-delay="100">
-        <p>ReactJS - Udemy</p>
-      </div>
-      <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <img src="images/bootstrap.jpg" alt="Bootstrap 5" class="img-fluid mb-2 cert-img" width="300" data-aos="zoom-in"
-     data-aos-delay="100">
-        <p>Bootstrap 5 - Udemy</p>
-      </div>
-      <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <img src="images/oracle.jpg" alt="Oracle" class="img-fluid mb-2 cert-img" width="300" data-aos="zoom-in"
-     data-aos-delay="100">
-        <p>Oracle - Udemy</p>
-      </div>
-    </div>
-  </div>
-</section>
-  <hr class=" proj-carousel-hr" />
 
 <!-- ========================
      B. Project Showcase Section
 =========================== -->
 <section id="projects" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">My Projects</h2>
+    <h2 class="text-center mb-4">My Learning Works</h2>
     <div class="row">
       <!-- Project Card -->
       <div class="col-md-6 mb-4" data-aos="fade-up">
@@ -249,7 +232,7 @@ Shanu's Portfolio</a>
 <!-- ========================
      C. Resume Download Section
 =========================== -->
-<section id="resume" class="py-5 text-center">
+<section id="resume" class="py-5 bg-light text-center">
   <div class="container">
     <h2 class="mb-3">Download My Resume</h2>
     <p class="mb-4">Get the latest version of my resume with 3 years of experience and certifications.</p>

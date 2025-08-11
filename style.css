@@ -87,6 +87,27 @@ hr {
 .bg-image{
 	object-fit: contain;
 }
+.hero-img {
+  height: 400px;
+  object-fit: contain;
+  display: none; /* Hide all by default */
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .desktop-img { display: block; }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet-img { display: block; }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .mobile-img { display: block; object-fit: contain; }
+}
+
 #portfolioCarousel .carousel-inner {
   height: 400px; /* Adjust this value as needed */
   background-color: white;
