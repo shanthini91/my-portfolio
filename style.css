@@ -159,7 +159,6 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  position: fixed;
   left: 0;
   z-index: 999;
   padding-left: 0 !important;
@@ -261,5 +260,6 @@ footer {
   color: green;
   margin-top: 15px;
 }
+
 
 
