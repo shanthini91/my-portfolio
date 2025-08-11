@@ -158,7 +158,7 @@ footer {
   padding: 1rem 0;
   position: relative;
   bottom: 0;
-  width: 100;
+  width: 100%;
   position: fixed;
   left: 0;
   z-index: 999;
@@ -261,4 +261,5 @@ footer {
   color: green;
   margin-top: 15px;
 }
+
 
